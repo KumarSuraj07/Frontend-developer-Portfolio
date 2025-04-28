@@ -323,11 +323,12 @@ section {
     margin-top: -77px;
     /* height: 500px; */
 }
-@media only screen and (max-width: 600px) {
+
+/* @media only screen and (max-width: 600px) {
     .hero-image img{
         margin-top: -100px;
     }
-  }
+  } */
 
 .shape {
     width: 400px;
