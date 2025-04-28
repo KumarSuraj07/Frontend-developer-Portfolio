@@ -320,13 +320,12 @@ section {
 }
 
 .hero-image img{
-    margin-top: -160px;
-    /* height: 700px; */
+    margin-top: -77px;
+    /* height: 500px; */
 }
 @media only screen and (max-width: 600px) {
     .hero-image img{
-        height: 400px;
-        margin-top: -200px;
+        margin-top: -150px;
     }
   }
 
