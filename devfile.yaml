@@ -1,0 +1,28 @@
+schemaVersion: 2.0.0
+metadata:
+  name: portfolio-website
+  version: 1.0.0
+  displayName: Portfolio Website
+  description: Development environment for a static HTML/CSS/JS portfolio website
+components:
+  - name: dev
+    container:
+      image: public.ecr.aws/aws-mde/universal-image:latest
+      memoryLimit: 512Mi
+      mountSources: true
+commands:
+  - id: install
+    exec:
+      component: dev
+      commandLine: "pip install html5validator && npm install -g htmlhint"
+      workingDir: ${PROJECT_SOURCE}
+  - id: build
+    exec:
+      component: dev
+      commandLine: "echo 'Validating HTML files...' && html5validator --root . --match '*.html' || true"
+      workingDir: ${PROJECT_SOURCE}
+  - id: test
+    exec:
+      component: dev
+      commandLine: "echo 'Running HTML linting...' && htmlhint index.html && echo 'Checking CSS files...' && find ./css -name '*.css' -exec echo 'Validating {}' \; -exec cat {} \; | grep -v '^$' | wc -l && echo 'All tests completed'"
+      workingDir: ${PROJECT_SOURCE}

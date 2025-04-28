@@ -1,0 +1,11 @@
+This folder would contain the following images:
+
+1. profile.jpg - A professional headshot of the developer
+2. project1.jpg - Screenshot of the E-commerce Website project
+3. project2.jpg - Screenshot of the Task Management App project
+4. project3.jpg - Screenshot of the Travel App UI Design project
+5. project4.jpg - Screenshot of the Portfolio Website project
+5. project5.jpg - Screenshot of the Weather Dashboard project
+6. project6.jpg - Screenshot of the Finance App UI project
+
+In a real implementation, these would be actual image files rather than this placeholder text file.
