@@ -670,7 +670,7 @@ section {
 .tag {
     padding: 4px 12px;
     background-color: #f0f0f0;
-    border-radius: var(--radius-full);
+    border-radius: 20px;
     font-size: 0.75rem;
     color: var(--gray-color);
 }
